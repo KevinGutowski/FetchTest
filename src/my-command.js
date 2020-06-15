@@ -9,7 +9,7 @@ export default function() {
     .then(text => {
       console.log(text)
       // create symbol here from text
-      const group = sketch.createLayerFromData(stringResponse,'svg')
+      const group = sketch.createLayerFromData(text,'svg')
     })
     .catch(e => console.error(e))
 }
